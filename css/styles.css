@@ -732,15 +732,20 @@ text-align: center;
     justify-content: center;
     gap: 72px;
     max-width: 767px;
-  }
-  @media  screen and (min-width: 768px) {
-    .footer .container {
-        max-width: 1157px;
-        min-width: 768px ;
-    }
-  }
     
   }
+  @media  screen and (min-width: 768px) and (max-width: 1157px) {
+    .footer .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-left: 108px;
+        gap: 72px 24px;
+        justify-content: flex-start;
+        align-items: baseline;
+  }
+   }
+    
   @media screen and (min-width: 1158px) {
     .footer .container {
         max-width: 1158px;
